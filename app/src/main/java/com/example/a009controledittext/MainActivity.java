@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         editClave=findViewById(R.id.editClave);
         buttVerificar=findViewById(R.id.buttVerificar);
         buttVerificar2=findViewById(R.id.Verificar2);
-
+/*Pasar variables con valores no objetos del tipo Edit,modificar el listener por parametros*/
         //Boton 1
         Listener_Verificar listener_verificar=new Listener_Verificar(this,editClave,editUsuario);
         buttVerificar.setOnClickListener(listener_verificar);
-
+/*No se usa este tipo de pasar parametro*/
         //Boton2
         List_Verificar2 list_verificar_2 =new List_Verificar2(this);
         buttVerificar2.setOnClickListener(list_verificar_2);
